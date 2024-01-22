@@ -39,6 +39,8 @@ struct ContentView: View {
                 }
                 .padding(.all, 20)
                 .background(.white)
+                .clipShape(.rect(cornerRadii: .init(topLeading: 10, bottomLeading: 0, bottomTrailing: 0, topTrailing: 10)))
+                .offset(y: -20)
             }
             .coordinateSpace(.named("List"))
             .navigationTitle("RARA")
